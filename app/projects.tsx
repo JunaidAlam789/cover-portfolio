@@ -91,7 +91,7 @@ export default function Projects(){
     
 return(
 <div className=" bg-gray-100">
-<h1 className="text-2xl flex justify-center">Projects</h1>
+<h1 className="text-2xl flex justify-center font-bold p-4">Projects</h1>
     {/* <button onClick={()=>{projectCards()}}>Projects</button>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 m-8">
     {cards.map((card,key)=>{return (<div key={key}>

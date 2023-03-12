@@ -15,7 +15,7 @@ import { JsxElement } from "typescript"
 <h1 className=" text-2xl bold m-4">{cardtitle}</h1>
 {/* <Image src="/Construction.jpg" height={200} width={200} alt="blog"/> */}
  <Image src={CardImageProps.src} height={CardImageProps.height} width={CardImageProps.width} alt={CardImageProps.alt}/> 
-<p className=" text-base  m-4  w-56 text-center">{cardDescription}</p>
+<p className=" text-base  m-4  w-48 text-center">{cardDescription}</p>
 <div className="flex flex-between">
 <button className=" w-20 px-2 m-4 border-2 bg-gray-400 rounded-lg"><a href={websiteURL}>View</a></button>
 <button className=" w-20 px-2 m-4 border-2 bg-gray-400 rounded-lg"><a href={githubURL}>GitHub</a></button>
