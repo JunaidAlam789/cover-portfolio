@@ -11,7 +11,7 @@ import { JsxElement } from "typescript"
  //export default function Card(cardtitle: string, cardDesc: string, cardImage: ImageProps  ){
     export default function Cards({cardtitle ,cardDescription , CardImageProps, websiteURL, githubURL}: {cardtitle: string, cardDescription: string, CardImageProps: ImageProps, websiteURL: string, githubURL: string}){  
     return (
-        <div className="flex flex-col justify-around  items-center bg-white">
+        <div className="flex flex-col justify-around  items-center bg-white rounded-lg">
 <h1 className=" text-2xl bold m-4">{cardtitle}</h1>
 {/* <Image src="/Construction.jpg" height={200} width={200} alt="blog"/> */}
  <Image src={CardImageProps.src} height={CardImageProps.height} width={CardImageProps.width} alt={CardImageProps.alt}/> 
