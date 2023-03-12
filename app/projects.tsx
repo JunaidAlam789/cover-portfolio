@@ -5,7 +5,7 @@ import Cards from './card'
 
 
 
-const data = [{ image_props: { src:"/Fabric.jpg", height:200 ,width:200, alt:"blog"},
+const data = [{ image_props: { src:"/Metaverse_Main.jpg", height:200 ,width:200, alt:"blog"},
                     cardtitle:"Panaverse",
                      cardDescription: "Project Developed in Next.js 13 React and TailwindCSS",
                      websiteURL:"https://panaverse-site-tailwind.vercel.app/",
