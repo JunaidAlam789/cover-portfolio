@@ -12,7 +12,7 @@ const data = [{ image_props: { src:"/Metaverse_Main.jpg", height:200 ,width:200,
                      githubURL:"https://github.com/JunaidAlam789/panaverse_site_tailwind",
                      
                     },
-              { image_props: { src:"/Construction.jpg", height:200 ,width:200, alt:"blog"},
+              { image_props: { src:"/usrbin.png", height:200 ,width:200, alt:"blog"},
                     cardtitle:"USRBIN",
                      cardDescription: "Project Developed in Next.js 13 React and TailwindCSS",
                      websiteURL:"https://usrbin-6q7i.vercel.app/",
