@@ -90,7 +90,7 @@ export default function Projects(){
         }
     
 return(
-<div className=" bg-gray-100">
+<div className=" bg-gray-900 text-gray-900">
 <h1 className="text-2xl flex justify-center font-bold p-4">Projects</h1>
     {/* <button onClick={()=>{projectCards()}}>Projects</button>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 m-8">
@@ -103,7 +103,7 @@ return(
         </div>)})}
          </div>  */}
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 m-8">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8  mx-60">
     {data.map((card,key)=>{return (<div key={key}>
         {
          <Cards CardImageProps={card.image_props}

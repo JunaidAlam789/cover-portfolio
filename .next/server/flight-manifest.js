@@ -187,9 +187,6 @@ self.__RSC_MANIFEST={
   "__entry_css_files__": {
     "D:\\GitHub\\cover-portfolio\\app\\layout": [
       "static/css/_app-client_app_globals_css.css"
-    ],
-    "D:\\GitHub\\cover-portfolio\\app\\page": [
-      "static/css/_app-client_app_page_module_css.css"
     ]
   },
   "D:\\GitHub\\cover-portfolio\\app\\projects.tsx": {
@@ -380,15 +377,6 @@ self.__RSC_MANIFEST={
       "name": "default",
       "chunks": [
         "static/css/_app-client_app_globals_css.css"
-      ]
-    }
-  },
-  "D:\\GitHub\\cover-portfolio\\app\\page.module.css": {
-    "default": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/_app-client_app_page_module_css.css"
       ]
     }
   }

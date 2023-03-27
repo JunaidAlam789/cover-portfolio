@@ -10,7 +10,7 @@ const links= [
 
 export default function Navigation(){
 return(
-    <div className="flex flex-col flex-wrap sm:flex-row justify-around items-center bg-gray-100">
+    <div className="flex flex-col flex-wrap sm:flex-row justify-around items-center  bg-gray-900 text-white">
     <div className=" order-0">
     KvobjeSoft
     </div>
