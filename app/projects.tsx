@@ -103,17 +103,20 @@ return(
         </div>)})}
          </div>  */}
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8  mx-60">
-    {data.map((card,key)=>{return (<div key={key}>
-        {
-         <Cards CardImageProps={card.image_props}
-         cardtitle={card.cardtitle} cardDescription={card.cardDescription} websiteURL={card.websiteURL} githubURL={card.githubURL}/>
-            
-        }
-        
-        </div>)})}
-    
-    </div>
+// Replace the existing grid div in projects.tsx
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4 sm:px-8 md:px-12 lg:px-16">
+    {data.map((card, key) => (
+        <div key={key}>
+            <Cards 
+                CardImageProps={card.image_props}
+                cardtitle={card.cardtitle} 
+                cardDescription={card.cardDescription} 
+                websiteURL={card.websiteURL} 
+                githubURL={card.githubURL}
+            />
+        </div>
+    ))}
+</div>
 </div>
 
 )

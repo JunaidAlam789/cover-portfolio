@@ -1,38 +1,53 @@
 import Image, { ImageProps } from "next/image"
-import { JsxElement } from "typescript"
+import Link from "next/link"
 
- export function CardImage(){
-   return(
-    <Image src="/Fabric.jpg" height={200} width={200} alt="blog"/>
-    
-   ) 
-} 
- 
- //export default function Card(cardtitle: string, cardDesc: string, cardImage: ImageProps  ){
-    export default function Cards({cardtitle ,cardDescription , CardImageProps, websiteURL, githubURL}: {cardtitle: string, cardDescription: string, CardImageProps: ImageProps, websiteURL: string, githubURL: string}){  
-    return (
-        <div className="flex flex-col justify-around  items-center bg-white rounded-lg">
-<h1 className=" text-2xl bold m-4">{cardtitle}</h1>
-{/* <Image src="/Construction.jpg" height={200} width={200} alt="blog"/> */}
- <Image src={CardImageProps.src} height={CardImageProps.height} width={CardImageProps.width} alt={CardImageProps.alt}/> 
-<p className=" text-base  m-4  w-48 text-center">{cardDescription}</p>
-<div className="flex flex-between">
-<button className=" w-20 px-2 m-4 border-2 bg-gray-400 rounded-lg"><a href={websiteURL}>View</a></button>
-<button className=" w-20 px-2 m-4 border-2 bg-gray-400 rounded-lg"><a href={githubURL}>GitHub</a></button>
-</div>
-</div>
-        
-    )
+export default function Cards({
+  cardtitle,
+  cardDescription,
+  CardImageProps,
+  websiteURL,
+  githubURL
+}: {
+  cardtitle: string,
+  cardDescription: string,
+  CardImageProps: ImageProps,
+  websiteURL: string,
+  githubURL: string
+}) {  
+  return (
+    <div className="flex flex-col h-full overflow-hidden bg-white rounded-lg shadow-lg transform transition-transform hover:scale-105">
+      <h1 className="text-2xl font-bold text-center p-4 text-gray-800">{cardtitle}</h1>
+      
+      <div className="relative w-full aspect-square">
+        <Image 
+          src={CardImageProps.src} 
+          alt={CardImageProps.alt || "Project image"}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
+      
+      <p className="text-base p-4 flex-grow text-center text-gray-600">{cardDescription}</p>
+      
+      <div className="flex justify-center gap-4 p-4">
+        <Link 
+          href={websiteURL} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          View
+        </Link>
+        <Link 
+          href={githubURL} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+        >
+          GitHub
+        </Link>
+      </div>
+    </div>
+  )
 }
-
-/* export default function Card(){
-    return(
-        <div className="flex flex-col items-center border-2">
-<h1 className="">Card6</h1>
-<Image src="/Construction.jpg" height={200} width={200} alt="blog"/>
-<p>Card6 Project Description</p>
-<button className=" w-20 px-2 mx-2 border-2 bg-gray-400 rounded-lg">View</button>
-<button className=" w-20 px-2 mx-2 border-2 bg-gray-400 rounded-lg">GitHub</button>
-</div>
-    )
-} */
